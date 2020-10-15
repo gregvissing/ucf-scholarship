@@ -610,7 +610,7 @@ nav ul[class*="menu-"] > li > a > * {
   -ms-transform: skew(30deg);
   -webkit-transform: skew(30deg);
   transform: skew(30deg);
-  font-size: 1.25em;
+  font-size: 1em;
   display: inline-block;
   text-transform: uppercase;
   font-weight: 500;
