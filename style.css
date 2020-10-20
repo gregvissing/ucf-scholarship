@@ -8,7 +8,7 @@
 
 @font-face {
 	font-family: "rift";
-	src: url("https://foundation.uc.edu/file/webdev/fonts/rift-italic.otf") format("otf");
+	src: url("https://foundation.uc.edu/file/webdev/fonts/rift-italic.otf") format("opentype");
 	font-weight: 300 !important;
 	font-style: italic !important;
 }
