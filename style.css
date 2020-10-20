@@ -5,6 +5,20 @@
 /* ---------------------------------- */
 /* ---------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+@font-face {
+	font-family: "rift";
+	src: url("https://foundation.uc.edu/file/webdev/fonts/rift-italic.otf") format("otf");
+	font-weight: 300 !important;
+	font-style: italic !important;
+}
+
+// @font-face {
+//     font-family: "rift";
+//     src: url("https://foundation.uc.edu/file/webdev/fonts/Rift-Italic.woff") format("woff"),url("https://foundation.uc.edu/file/webdev/fonts/Rift-Italic.ttf") format("truetype"),url("https://foundation.uc.edu/file/webdev/fonts/rift-italic.otf") format("opentype");
+//     font-weight: 300 !important;
+// }
+
 .hide {
   display: none;
 }
@@ -70,19 +84,9 @@ button,
 }
 /* ---------------------------------- */
 /* ---------------------------------- */
-// @font-face {
-// 	font-family: "rift";
-// 	src: url("https://foundation.uc.edu/file/webdev/fonts/rift-italic.otf")
-// 		format("otf");
-// 	font-weight: 300 !important;
-// 	font-style: italic !important;
-// }
 
-@font-face {
-    font-family: "rift";
-    src: url("https://foundation.uc.edu/file/webdev/fonts/Rift-Italic.woff") format("woff"),url("https://foundation.uc.edu/file/webdev/fonts/Rift-Italic.ttf") format("truetype"),url("https://foundation.uc.edu/file/webdev/fonts/rift-italic.otf") format("opentype");
-    font-weight: 300 !important;
-}
+
+
 
 h1,
 h2,
