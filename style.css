@@ -498,11 +498,11 @@ header {
   left: 0;
   z-index: 1030;
 }
-header.reduced {
+header.site-header.reduced {
   -webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
   box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
 }
-header.reduced > .container {
+header.site-header.reduced > .container {
   padding: 0;
 }
 header ul {
