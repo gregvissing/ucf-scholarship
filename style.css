@@ -129,7 +129,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "rift";
+  font-family: "rift", sans-serif;
   display: block;
   width: 100%;
   letter-spacing: 1px;
