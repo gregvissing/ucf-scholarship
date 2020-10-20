@@ -2,6 +2,8 @@
 /* ---------------------------------- */
 /* ---------------------------------- */
 /* ---------------------------------- */
+/* ---------------------------------- */
+/* ---------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 .hide {
   display: none;
@@ -321,6 +323,10 @@ hr {
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 .featured .grid-50-50 > .grid-cell--1,
@@ -393,6 +399,10 @@ hr {
   padding: 0 10px;
   border-radius: 4px;
   letter-spacing: 1px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   display: inline-block !important;
   border: 1px solid #303030;
@@ -488,6 +498,13 @@ header {
   left: 0;
   z-index: 1030;
 }
+header.reduced {
+  -webkit-box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.5);
+}
+header.reduced > .container {
+  padding: 0;
+}
 header ul {
   list-style: none;
 }
@@ -499,6 +516,11 @@ header > .container {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
+  -webkit-transition: padding 0.4s ease-in-out;
+  -moz-transition: padding 0.4s ease-in-out;
+  -ms-transition: padding 0.4s ease-in-out;
+  -o-transition: padding 0.4s ease-in-out;
+  transition: padding 0.4s ease-in-out;
 }
 @media (max-width: 1030px) {
   header > .container {
@@ -556,6 +578,10 @@ nav ul[class*="menu-"] {
   -webkit-box-align: end;
   align-items: flex-end;
   flex-wrap: nowrap;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 @media (max-width: 1030px) {
@@ -583,6 +609,10 @@ nav ul[class*="menu-"] {
 nav ul[class*="menu-"] > li {
   display: inline-block;
   list-style: none;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   float: left;
   font-size: 1rem;
@@ -598,6 +628,10 @@ nav ul[class*="menu-"] > li > a {
   color: #000;
   text-decoration: none;
   padding: 0 0.5em;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 @media (max-width: 1040px) {
@@ -623,6 +657,9 @@ nav ul[class*="menu-"] > li > a .searchIcon {
   line-height: 50px;
   width: 15px;
 }
+nav ul[class*="menu-"] > li.search :hover svg {
+  fill: #fff;
+}
 nav ul[class*="menu-"] > li ul {
   display: inline-block;
   position: absolute;
@@ -647,6 +684,7 @@ nav ul[class*="menu-"] > li ul li {
   height: 0;
   -webkit-transition: height 200ms ease-in;
   -moz-transition: height 200ms ease-in;
+  -ms-transition: height 200ms ease-in;
   -o-transition: height 200ms ease-in;
   transition: height 200ms ease-in;
 }
@@ -725,6 +763,10 @@ nav ul[class*="menu-"] li.give a:before {
 .hamburger.is-closed:before {
   -webkit-transform: translate3d(0, 0, 0);
   -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
   color: #000;
   content: "";
   display: block;
@@ -735,6 +777,10 @@ nav ul[class*="menu-"] li.give a:before {
   width: 100px;
 }
 .hamburger.is-closed .hamb-top {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
   background-color: #fff;
   top: 7px;
@@ -745,6 +791,10 @@ nav ul[class*="menu-"] li.give a:before {
   top: 50%;
 }
 .hamburger.is-closed .hamb-bottom {
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
   background-color: #fff;
   bottom: 7px;
@@ -1172,7 +1222,7 @@ nav ul[class*="menu-"] li.give a:before {
 /* ---------------------------------- */
 .card-layout {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 @media (max-width: 768px) {
   .card-layout {
@@ -1180,7 +1230,7 @@ nav ul[class*="menu-"] li.give a:before {
   }
 }
 .card-layout .card {
-  width: 32%;
+  width: 30%;
   border: lightgray 1px solid;
   border-radius: 5px;
   overflow: hidden;
@@ -1840,4 +1890,69 @@ footer p {
 }
 footer #copyright p {
   margin: 2em 0 0;
+}
+
+#why-now .flex-flow {
+  padding: 0;
+  display: block !important;
+}
+#why-now .flex-flow > div.col {
+  text-align: center;
+  width: 49% !important;
+  display: inline-block !important;
+  vertical-align: top;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+#why-now .flex-flow > div.col .amount {
+  height: 100px;
+}
+#why-now .flex-flow > div.col .amount span {
+  line-height: 100px;
+}
+#why-now .flex-flow > div.col p {
+  min-height: 80px;
+}
+#why-now i::before {
+  font-size: 4em;
+  color: #e00122;
+}
+#why-now .amount {
+  font-size: 2em;
+}
+#why-now svg.chart circle {
+  fill: #ddd;
+  stroke: #000;
+  stroke-width: 50;
+  stroke-dasharray: 0 158;
+  transition: stroke-dasharray 3s ease;
+}
+#why-now svg.chart {
+  margin: 0 auto;
+  transform: rotate(-90deg);
+  background: #ddd;
+  border-radius: 50%;
+  display: block;
+}
+#why-now .stamp {
+  width: 50%;
+  color: #555;
+  font-size: 2em;
+  font-weight: 700;
+  border: 0.25rem solid #555;
+  display: inline-block;
+  padding: 0.25rem 0rem;
+  text-transform: uppercase;
+  border-radius: 1rem;
+  font-family: "Courier";
+  -webkit-mask-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/8399/grunge.png");
+  -webkit-mask-size: 944px 604px;
+  mix-blend-mode: multiply;
+}
+#why-now .stamp.is-approved {
+  color: #0a9928;
+  border: 0.5rem solid #0a9928;
+  -webkit-mask-position: 13rem 6rem;
+  transform: rotate(-4deg);
+  border-radius: 0;
 }
