@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="/style.css">
 	</head>
 	<body>
-		<div id="wrapper">
+<div id="wrapper">
 	<header class="site-header" id="masthead">
 		<div id="search">
 			<div class="container">
@@ -391,7 +391,6 @@
 				<img alt="hero triangle pattern" class="trianglePattern" src="https://foundation.uc.edu/image/_2019-redesign/triangle-pattern.png">
 				<div class="hero-text-container">
 					<h1 class="text-center">What’s Next, Starts with You.</h1>
-					<!-- 				<h2 class="text-center">Sub-title text content</h2> -->
 					<p class="text-center">Join us in empowering our next leaders through your support for scholarships and fellowships at UC.</p>
 				</div>
 				<div class="btn-container">
@@ -456,11 +455,32 @@
 					<h2 class="text-center black-bg">WHY NOW?</h2>
 				</div>
 			</div>
-			<div class="container">
-				<div class="row">
-					<p>In today’s knowledge economy, the value of a degree from UC—a Carnegie R1 institution—has never been higher. -or- In today’s knowledge economy, less than 30% of Ohioans have a bachelor’s degree or higher.</p>
-					<p>Even with public funding reductions, UC continues to contain student costs with its Tuition Guarantee Program. -or- Ohio is ranked 45th out of 50 states for college affordability. -or- Nearly [two-thirds?] of UC students have unmet financial need.</p>
-					<p>Lacking financial resources remain a hurdle to students attending college, particularly for underserved populations. -or- UC has permanently increased scholarship support for underrepresented minority undergraduate students by $500,000 per year.</p>
+			<div id="why-now" class="container text-center">
+				<div class="flex-flow">
+					<div class="col">
+						<p>In today’s knowledge economy, the value of a UC degree from UC—a Carnegie R1 institution—has never been higher.</p>
+						<div class="u-text-center"><i class="fas fa-graduation-cap"></i></div>
+					</div>
+
+					<div class="col">
+						<p>Even with public funding reductions, UC continues to contain student costs with its Tuition Guarantee Program.</p>
+						<div class="u-text-center stamp is-approved">guarantee</div>
+					</div>
+
+					<div class="col">
+						<p>Nearly two-thirds of UC students have unmet financial need.</p>
+						<div class="u-text-center">
+							<svg width="100" height="100" class="chart">
+							  <circle r="25" cx="50" cy="50" class="pie"/>
+							</svg>
+						</div>
+					</div>				
+
+					<div class="col">
+						<p>UC has permanently increased scholarship support for underrepresented minority undergraduate students by $500,000 per year.</p>
+						<div class="amount"><span>$</span><span id="cx1">0</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
