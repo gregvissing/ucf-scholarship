@@ -2,7 +2,7 @@
 ScrollTrigger.create({
   start: 'top -80',
   end: 99999,
-  toggleClass: {className: 'site-header reduced', targets: '.site-header'}
+  toggleClass: {className: 'reduced', targets: '.site-header'}
 });
 
 // ANIMATION
