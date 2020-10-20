@@ -1239,7 +1239,7 @@ nav ul[class*="menu-"] li.give a:before {
   vertical-align: top;
   /* forces our cards to line up along the top of their container */
   margin-top: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 0;
   /* gave top margin and centered card */
   /* added padding to direct chidlren so that EVERYTHING didnt get picked up in padding declaration */
   /*colour for card header and button */
