@@ -1,7 +1,63 @@
-// console.log("Load script.js");
+// FIXED HEADER
+ScrollTrigger.create({
+  start: 'top -80',
+  end: 99999,
+  toggleClass: {className: 'site-header reduced', targets: '.site-header'}
+});
 
-// // Instantiating the global app object
-// var app = {};
+// ANIMATION
+
+var pourcentage = 66;
+var total = 158;
+
+$(document).ready(function () {
+	var result = (pourcentage * total) / 100;
+
+	$(".pie").css("strokeDasharray", result);
+});
+
+var counter = { var: 0 };
+var tal = document.getElementById("cx1");
+
+TweenMax.to(counter, 3, {
+	var: 500000,
+	onUpdate: function () {
+		tal.innerHTML = numberWithCommas(Math.ceil(counter.var));
+	},
+	ease: Circ.easeOut
+});
+
+function numberWithCommas(x) {
+	return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+// Close and Reset the Video Modal
+function close_video_modal() {
+	event.preventDefault();
+
+	// re-hide the video modal
+	$("body").removeClass("show-video-modal noscroll");
+
+	// reset the source attribute for the iframe template, kills the video
+	$("iframe").attr("src", "");
+}
+
+// if the 'close' button/element, or the overlay are clicked
+$("body").on("click", ".close-video-modal, .video-modal .overlay", function (
+	event
+) {
+	// call the close and reset function
+	close_video_modal();
+});
+
+// if the ESC key is tapped
+$("body").keyup(function (e) {
+	// ESC key maps to keycode `27`
+	if (e.keyCode == 27) {
+		// call the close and reset function
+		close_video_modal();
+	}
+});
 
 function headerHeight(element) {
 	var headerHeightValue = element.outerHeight();
