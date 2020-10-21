@@ -503,7 +503,7 @@ hr {
 }
 /* ---------------------------------- */
 /* ---------------------------------- */
-header {
+header.site-header {
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -518,14 +518,14 @@ header.site-header.reduced {
 header.site-header.reduced > .container {
   padding: 0;
 }
-header ul {
+header.site-header ul {
   list-style: none;
 }
-header a.give.button {
+header.site-header a.give.button {
   color: #fff !important;
   text-decoration: none;
 }
-header > .container {
+header.site-header > .container {
   display: flex;
   justify-content: space-between;
   padding: 10px 0;
@@ -536,34 +536,34 @@ header > .container {
   transition: padding 0.4s ease-in-out;
 }
 @media (max-width: 1030px) {
-  header > .container {
+  header.site-header > .container {
     display: block;
   }
 }
-header > .container > div[id*="_Content"] {
+header.site-header > .container > div[id*="_Content"] {
   width: 25%;
   display: flex;
   align-items: center;
 }
 @media (max-width: 1030px) {
-  header > .container > div[id*="_Content"] {
+  header.site-header > .container > div[id*="_Content"] {
     display: inline-flex;
   }
 }
 @media (max-width: 768px) {
-  header > .container > div[id*="_Content"] {
+  header.site-header > .container > div[id*="_Content"] {
     width: 40%;
     display: inline-flex;
     align-items: center;
   }
 }
-header > .container > div[id*="_Content"] a {
+header.site-header > .container > div[id*="_Content"] a {
   width: 100%;
   display: block;
   align-items: center;
   justify-content: center;
 }
-header > .container > div[id*="_Content"] a img {
+header.site-header > .container > div[id*="_Content"] a img {
   width: 100%;
   display: block;
 }
@@ -1568,7 +1568,7 @@ body.modal-open {
   padding: 0;
   position: absolute;
   right: 1em;
-  top: 1em;
+  top: 0;
   width: 2em;
 }
 
