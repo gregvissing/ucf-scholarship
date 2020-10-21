@@ -428,11 +428,12 @@ hr {
 }
 .featured .flex--vertical {
   flex-flow: column nowrap;
+  justify-content: space-evenly;
 }
 .featured .flex--vertical .flex-child {
-  flex: 0 0 50%;
+  // flex: 0 0 50%;
   height: 50%;
-  width: 100%;
+  width: 50%;
 }
 .featured .grid {
   height: 600px;
