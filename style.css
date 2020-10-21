@@ -427,7 +427,7 @@ hr {
   border-color: #fff;
 }
 .featured .flex--vertical {
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   justify-content: space-evenly;
 }
 .featured .flex--vertical .flex-child {
