@@ -1580,7 +1580,7 @@ body.modal-open {
 }
 
 [data-modal-x] {
-  border-right: 2px solid;
+  border-right: 2px solid #000;
   bottom: 0;
   display: block;
   height: 2em;
@@ -1595,7 +1595,7 @@ body.modal-open {
 }
 
 [data-modal-x]:after {
-  border-right: 2px solid;
+  border-right: 2px solid #000;
   content: "";
   height: 100%;
   left: 0;
