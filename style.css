@@ -150,6 +150,14 @@ h3.black-bg {
   margin: 0;
 }
 
+p.large {
+    font-family: "Open Sans",sans-serif;
+    font-style: normal !important;
+    font-size: 1.45em !important;
+    color: #222 !important;
+    font-weight: 700 !important;
+}
+
 /* ---------------------------------- */
 /* ---------------------------------- */
 html {
